@@ -1,0 +1,25 @@
+.uploadFile_Container{
+    padding: 150px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #64748B;
+    border-radius: 12px;
+    border-style: dashed;
+    max-height: 30%;
+    // border-image: repeating-linear-gradient(180deg, black 0px, black 10px, black 10px, transparent 20px) 2;
+  border-image-slice: 1;
+  .uploadfile_img{
+    width: 15%;
+  }
+  .uploadbutton{
+    background-color: #FFFFFF;
+    border: 1px solid #64748B;
+    border-radius: 6px;
+    padding: 10px;
+    img{
+        width: 15%;
+    }
+  }
+}

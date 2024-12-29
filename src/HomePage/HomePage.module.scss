@@ -1,0 +1,45 @@
+.home_container{
+    padding: 10px;
+    margin: 10px;
+    .header_containers{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 999999999999;
+    }
+    .home__form_container{
+        // margin: 50px;
+        position: fixed;
+        width: 100%;
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 4fr 4fr;
+        gap: 20px;
+        overflow-x: scroll;
+        .scrollable_form {
+            overflow-y: auto; /* Enable vertical scrolling */
+            max-height: 50%; /* Set a height for the scrollable area */
+            padding: 10px; /* Optional: Add padding for better spacing */
+            // background-color: #f9f9f9; /* Optional: Differentiate the area visually */
+        }
+    }
+    @media (max-width: 700px) {
+        width: 100%;
+        .home__form_container{
+            margin-top: 200px;
+            position: relative;
+            display: grid;
+            grid-template-columns: auto;
+        }
+      }
+      @media (max-width: 800px) {
+        width: 100%;
+        .home__form_container{
+            margin-top: 200px;
+            position: relative;
+            display: grid;
+            grid-template-columns: auto;
+        }
+      }
+}
